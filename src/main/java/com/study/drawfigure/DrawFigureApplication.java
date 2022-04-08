@@ -5,12 +5,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @Slf4j
-@SpringBootApplication
 public class DrawFigureApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DrawFigureApplication.class, args);
-
         DrawFigure rectangle = new DrawFigure(new Rectangle(5, 5.5));
         DrawFigure rightTriangle = new DrawFigure(new RightTriangle(5, 5.5));
 

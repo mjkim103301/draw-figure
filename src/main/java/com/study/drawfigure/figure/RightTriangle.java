@@ -1,4 +1,7 @@
-package com.study.drawfigure;
+package com.study.drawfigure.figure;
+
+import com.study.drawfigure.Figure;
+import com.study.drawfigure.exception.LengthException;
 
 public class RightTriangle implements Figure {
     private double baseLength;

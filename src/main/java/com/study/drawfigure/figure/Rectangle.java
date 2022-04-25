@@ -1,17 +1,15 @@
 package com.study.drawfigure.figure;
 
 import com.study.drawfigure.Figure;
-import com.study.drawfigure.exception.LengthException;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class Rectangle implements Figure {
 
     private double baseLength;
     private double height;
 
-    public Rectangle(double baseLength, double height) throws LengthException {
-        if (baseLength < 0 || height < 0) {
-            throw new LengthException("직사각형");
-        }
+    public Rectangle(double baseLength, double height) {
         this.baseLength = baseLength;
         this.height = height;
     }
